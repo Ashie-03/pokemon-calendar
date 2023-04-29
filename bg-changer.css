@@ -1,0 +1,144 @@
+* {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: small;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+    background-image: url("bg.jpg");
+    background-size: cover;
+    color: white;
+}
+
+/* Section 1 */
+/* Image selector */
+img {
+    width: 60px;
+    height: 50px;
+}
+
+.pokemonSelector {
+    display: flex;
+    width: 200px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+[type=radio] { 
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+  
+[type=radio] + img {
+    cursor: pointer;
+    background-color: azure;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 3px;
+    margin: 5px;
+}
+  
+[type=radio]:checked + img {
+    outline: 2px solid #008000;
+}
+
+/* Border separating two sections */
+.sect1 {
+    border-right: 1px solid black;
+    width: 300px;
+    padding: 10px;
+    background-image: linear-gradient(43deg, #d810ba 0%, #C850C0 46%, #9c0fb7 100%);
+}
+
+ul {
+    margin: 0;
+    padding:0;
+}
+
+li {
+    list-style-type: none;
+}
+/* Submit btn */
+#create {
+    width: 95%;
+    padding: 5px;
+    margin: 3px;
+}
+
+input {
+    width: 95%;
+}
+/* Credits */
+.credits {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: 110%;
+    color: white;
+}
+
+a {
+    color: white;
+}
+
+span {
+    font-size: larger;
+}
+
+/* Section 2 */
+
+.sect2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 5px;
+    margin: 15%;
+}
+
+#quote {
+    padding: 5px;
+    font-family: 'Merienda', cursive;
+    text-align: center;
+    font-size: 25px;
+}
+
+.calendar {
+    display: flex;
+    gap: 30px;
+}
+/* Image */
+#imagePokemon{
+    width: 250px;
+    height: 200px;
+    background-size: 250px 200px;
+/*     border: 1px solid blue; */
+}
+
+/* Table */
+
+caption {
+    padding: 10px;
+    font-family: 'Merienda', cursive;
+    font-size: larger;
+}
+td {
+    width: 45px;
+    height: fit-content;
+    border: 1px solid white;
+    border-radius: 5px;
+    font-size: larger;
+    text-align: center;
+}
+
+#days {
+    font-weight: bold;
+}
+
+
+/* Onclick changes */
